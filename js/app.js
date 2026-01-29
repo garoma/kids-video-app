@@ -4,77 +4,90 @@ const videosData = {
         {
             titulo: "Gatinhos Brincando",
             descricao: "Veja gatinhos fofinhos se divertindo!",
-            url: "videos/animais/gatorede1.mp4"
+            url: "https://www.tiktok.com/@46robingrau_/video/7596526266455444744",
+            tipo: "youtube"
         },
         {
             titulo: "Cachorros Felizes",
             descricao: "Cachorrinhos fazendo coisas engraçadas",
-            url: "videos/animais/gatorede2.mp4"
+            url: "videos/animais/gatorede2.mp4",
+            tipo: "mp4"
         },
         {
             titulo: "Pássaros Cantando",
             descricao: "Ouça os pássaros cantarem lindamente",
-            url: "videos/animais/gatorede3.mp4"
+            url: "videos/animais/gatorede3.mp4",
+            tipo: "mp4"
         }
     ],
     desenhos: [
         {
             titulo: "Como Desenhar um Gato",
             descricao: "Aprenda a desenhar um gatinho fofo",
-            url: "https://www.youtube.com/shorts/3B7loUxG-fM?feature=share"
+            url: "https://www.youtube.com/shorts/3B7loUxG-fM?feature=share",
+            tipo: "youtube"
         },
         {
             titulo: "Desenhando Flores",
             descricao: "Crie lindas flores coloridas",
-            url: "https://www.youtube.com/shorts/1p6HJLnAleo?feature=share"
+            url: "https://www.youtube.com/shorts/1p6HJLnAleo?feature=share",
+            tipo: "youtube"
         }
     ],
     musica: [
         {
             titulo: "ABC Musical",
             descricao: "Aprenda o alfabeto cantando",
-            url: "https://www.youtube.com/shorts/xmpIm_E8ahQ?feature=share"
+            url: "https://www.youtube.com/shorts/xmpIm_E8ahQ?feature=share",
+            tipo: "youtube"
         },
         {
             titulo: "Músicas de Roda",
             descricao: "Cante e dance as músicas clássicas",
-            url: "https://www.youtube.com/shorts/NTb0NHLrXvU?feature=share"
+            url: "https://www.youtube.com/shorts/NTb0NHLrXvU?feature=share",
+            tipo: "youtube"
         }
     ],
     ciencia: [
         {
             titulo: "Experiência com Cores",
             descricao: "Misture cores e veja a mágica",
-            url: "https://www.youtube.com/shorts/UsHk4ZLH_3o?feature=share"
+            url: "https://www.youtube.com/shorts/UsHk4ZLH_3o?feature=share",
+            tipo: "youtube"
         },
         {
             titulo: "Vulcão Caseiro",
             descricao: "Faça um vulcão que explode!",
-            url: "https://www.youtube.com/shorts/dfItV6Ql0pc?feature=share"
+            url: "https://www.youtube.com/shorts/dfItV6Ql0pc?feature=share",
+            tipo: "youtube"
         }
     ],
     historias: [
         {
             titulo: "O Patinho Feio",
             descricao: "Uma história sobre ser diferente",
-            url: "https://www.youtube.com/shorts/jluEvdRbNxU?feature=share"
+            url: "https://www.youtube.com/shorts/jluEvdRbNxU?feature=share",
+            tipo: "youtube"
         },
         {
             titulo: "Os Três Porquinhos",
             descricao: "A clássica história dos porquinhos",
-            url: "https://www.youtube.com/shorts/2nLVedKJatc?feature=share"
+            url: "https://www.youtube.com/shorts/2nLVedKJatc?feature=share",
+            tipo: "youtube"
         }
     ],
     brincadeiras: [
         {
             titulo: "Brincadeiras de Rua",
             descricao: "Vamos brincar ao ar livre!",
-            url: "https://www.youtube.com/shorts/5ZbQkhavq6s?feature=share"
+            url: "https://www.youtube.com/shorts/5ZbQkhavq6s?feature=share",
+            tipo: "youtube"
         },
         {
             titulo: "Jogos Divertidos",
             descricao: "Jogos para brincar com os amigos",
-            url: "https://www.youtube.com/shorts/rkvpg9V5sn8?feature=share"
+            url: "https://www.youtube.com/shorts/rkvpg9V5sn8?feature=share",
+            tipo: "youtube"
         }
     ]
 };
@@ -134,50 +147,115 @@ function abrirCategoria(categoria) {
     }, 300);
 }
 
+// function criarElementosVideo() {
+//     videosContainer.innerHTML = '';
+    
+//     videosAtuais.forEach((video, index) => {
+//         const videoElement = document.createElement('div');
+//         videoElement.className = 'video-item';
+//         if (index === 0) videoElement.classList.add('active');
+        
+//         videoElement.innerHTML = `
+//             <video loop playsinline>
+//                 <source src="${video.url}" type="video/mp4">
+//                 Seu navegador não suporta vídeos.
+//             </video>
+//             <div class="video-info">
+//                 <h2>${video.titulo}</h2>
+//                 <p>${video.descricao}</p>
+//             </div>
+//         `;
+        
+//         videosContainer.appendChild(videoElement);
+//     });
+    
+//     // Adicionar eventos de toque
+//     adicionarEventosToque();
+// }
+
 function criarElementosVideo() {
-    videosContainer.innerHTML = '';
-    
-    videosAtuais.forEach((video, index) => {
-        const videoElement = document.createElement('div');
-        videoElement.className = 'video-item';
-        if (index === 0) videoElement.classList.add('active');
-        
-        videoElement.innerHTML = `
-            <video loop playsinline>
-                <source src="${video.url}" type="video/mp4">
-                Seu navegador não suporta vídeos.
-            </video>
-            <div class="video-info">
-                <h2>${video.titulo}</h2>
-                <p>${video.descricao}</p>
-            </div>
-        `;
-        
-        videosContainer.appendChild(videoElement);
-    });
-    
-    // Adicionar eventos de toque
-    adicionarEventosToque();
+  videosContainer.innerHTML = '';
+
+  videosAtuais.forEach((video, index) => {
+    const videoElement = document.createElement('div');
+    videoElement.className = 'video-item';
+    if (index === 0) videoElement.classList.add('active');
+
+    let mediaHTML = '';
+
+    if (video.tipo === 'mp4') {
+      mediaHTML = `
+        <video loop autoplay muted playsinline>
+          <source src="${video.url}" type="video/mp4">
+        </video>
+      `;
+    }
+
+    if (video.tipo === 'youtube') {
+      const videoId = video.url.split('/shorts/')[1];
+      mediaHTML = `
+        <iframe
+          src="https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&rel=0&playsinline=1"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      `;
+    }
+
+    videoElement.innerHTML = `
+      ${mediaHTML}
+      <div class="video-info">
+        <h2>${video.titulo}</h2>
+        <p>${video.descricao}</p>
+      </div>
+    `;
+
+    videosContainer.appendChild(videoElement);
+  });
+
+  adicionarEventosToque();
 }
 
-function reproduzirVideoAtual() {
-    const videoItems = document.querySelectorAll('.video-item');
+// function reproduzirVideoAtual() {
+//     const videoItems = document.querySelectorAll('.video-item');
     
-    videoItems.forEach((item, index) => {
-        const video = item.querySelector('video');
+//     videoItems.forEach((item, index) => {
+//         const video = item.querySelector('video');
         
-        if (index === videoAtualIndex) {
-            item.classList.add('active');
-            video.play().catch(err => console.log('Erro ao reproduzir:', err));
-        } else {
-            item.classList.remove('active');
-            video.pause();
-            video.currentTime = 0;
-        }
-    });
+//         if (index === videoAtualIndex) {
+//             item.classList.add('active');
+//             video.play().catch(err => console.log('Erro ao reproduzir:', err));
+//         } else {
+//             item.classList.remove('active');
+//             video.pause();
+//             video.currentTime = 0;
+//         }
+//     });
     
-    // Atualizar contador
-    videoAtualSpan.textContent = videoAtualIndex + 1;
+//     // Atualizar contador
+//     videoAtualSpan.textContent = videoAtualIndex + 1;
+// }
+
+function reproduzirVideoAtual() {
+  const videoItems = document.querySelectorAll('.video-item');
+
+  videoItems.forEach((item, index) => {
+    const video = item.querySelector('video');
+
+    if (index === videoAtualIndex) {
+      item.classList.add('active');
+      if (video) video.play().catch(() => {});
+    } else {
+      item.classList.remove('active');
+      if (video) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    }
+  });
+
+  videoAtualSpan.textContent = videoAtualIndex + 1;
 }
 
 function proximoVideo() {
