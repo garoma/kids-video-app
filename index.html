@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidsTube - Vídeos Divertidos!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Tela de Categorias -->
+    <div id="categorias-screen" class="screen active">
+        <div class="header">
+            <h1 class="logo">🎈 KidsTube</h1>
+            <p class="subtitle">Escolha o que você quer assistir!</p>
+        </div>
+        
+        <div class="categorias-grid">
+            <div class="categoria-card" data-categoria="animais" style="--delay: 0">
+                <div class="categoria-icon">🐾</div>
+                <h3>Animais</h3>
+                <p>Bichinhos fofos</p>
+            </div>
+            
+            <div class="categoria-card" data-categoria="desenhos" style="--delay: 0.1s">
+                <div class="categoria-icon">🎨</div>
+                <h3>Desenhos</h3>
+                <p>Aprenda a desenhar</p>
+            </div>
+            
+            <div class="categoria-card" data-categoria="musica" style="--delay: 0.2s">
+                <div class="categoria-icon">🎵</div>
+                <h3>Música</h3>
+                <p>Cante junto</p>
+            </div>
+            
+            <div class="categoria-card" data-categoria="ciencia" style="--delay: 0.3s">
+                <div class="categoria-icon">🔬</div>
+                <h3>Ciência</h3>
+                <p>Experimentos legais</p>
+            </div>
+            
+            <div class="categoria-card" data-categoria="historias" style="--delay: 0.4s">
+                <div class="categoria-icon">📚</div>
+                <h3>Histórias</h3>
+                <p>Contos mágicos</p>
+            </div>
+            
+            <div class="categoria-card" data-categoria="brincadeiras" style="--delay: 0.5s">
+                <div class="categoria-icon">🎮</div>
+                <h3>Brincadeiras</h3>
+                <p>Vamos brincar</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Vídeos -->
+    <div id="videos-screen" class="screen">
+        <button class="btn-voltar">← Voltar</button>
+        
+        <div class="videos-container">
+            <!-- Os vídeos serão carregados aqui dinamicamente -->
+        </div>
+        
+        <div class="indicador-video">
+            <span class="video-atual">1</span> / <span class="video-total">0</span>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

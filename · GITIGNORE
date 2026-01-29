@@ -1,0 +1,120 @@
+# KidsTube - .gitignore
+
+# ==================== ARQUIVOS DE VÍDEO ====================
+# NÃO enviar vídeos para o repositório (são muito grandes)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+*.webm
+
+# ==================== NODE & NPM ====================
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==================== PYTHON ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+
+# ==================== EDITORES ====================
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains (WebStorm, PyCharm, etc)
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==================== SISTEMAS OPERACIONAIS ====================
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ==================== BUILDS & DISTRIBUIÇÃO ====================
+dist/
+build/
+*.zip
+*.tar.gz
+*.rar
+
+# ==================== TEMPORÁRIOS ====================
+*.tmp
+*.temp
+*.log
+*.cache
+
+# ==================== BACKUPS ====================
+*.bak
+*.backup
+*~backup
+
+# ==================== ARQUIVOS DE CONFIGURAÇÃO LOCAL ====================
+.env
+.env.local
+config.local.js
+
+# ==================== FERRAMENTAS DE DESENVOLVIMENTO ====================
+.sass-cache/
+.npm/
+.eslintcache
+.stylelintcache
+
+# ==================== ESPECÍFICO DO PROJETO ====================
+# Informações geradas pelo script de divisão
+videos/*/clip_info.txt
+videos/*/*_clips_info.txt
+
+# Thumbnails gerados
+thumbnails/
+
+# Arquivos de teste
+test-videos/
+*.test.mp4
+
+# ==================== MANTÉM PASTAS VAZIAS ====================
+# Git não rastreia pastas vazias, então criamos arquivos .gitkeep
+# Para manter a estrutura de pastas
+!videos/*/.gitkeep
+!videos/**/.gitkeep
