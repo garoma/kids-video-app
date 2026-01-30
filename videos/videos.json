@@ -1,0 +1,18 @@
+{
+  "animais": {
+    "titulo": "Animais",
+    "pasta": "videos/animais",
+    "videos": [
+      { "arquivo": "gato1.mp4", "titulo": "Gatinho", "descricao": "Brincando" },
+      { "arquivo": "gato2.mp4", "titulo": "Gato Dormindo", "descricao": "Soneca" }
+    ]
+  },
+
+  "musica": {
+    "titulo": "Músicas",
+    "pasta": "videos/musica",
+    "videos": [
+      { "arquivo": "abc.mp4", "titulo": "ABC", "descricao": "Aprendendo" }
+    ]
+  }
+}

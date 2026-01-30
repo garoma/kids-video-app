@@ -2,93 +2,170 @@
 const videosData = {
     animais: [
         {
-            titulo: "Gatinhos Brincando",
-            descricao: "Veja gatinhos fofinhos se divertindo!",
-            url: "https://www.tiktok.com/@46robingrau_/video/7596526266455444744",
-            tipo: "youtube"
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/1.mp4"
         },
         {
             titulo: "Cachorros Felizes",
             descricao: "Cachorrinhos fazendo coisas engraçadas",
-            url: "videos/animais/gatorede2.mp4",
-            tipo: "mp4"
+            url: "videos/animais/2.mp4"
         },
         {
-            titulo: "Pássaros Cantando",
-            descricao: "Ouça os pássaros cantarem lindamente",
-            url: "videos/animais/gatorede3.mp4",
-            tipo: "mp4"
-        }
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/3.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/4.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/5.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/6.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/7.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/8.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/9.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/10.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/11.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/12.mp4"
+        },
+        {
+            titulo: "Cachorros Felizes",
+            descricao: "Cachorrinhos fazendo coisas engraçadas",
+            url: "videos/animais/13.mp4"
+        },
     ],
     desenhos: [
         {
             titulo: "Como Desenhar um Gato",
             descricao: "Aprenda a desenhar um gatinho fofo",
-            url: "https://www.youtube.com/shorts/3B7loUxG-fM?feature=share",
-            tipo: "youtube"
+            url: "videos/desenhos/1.mp4"
         },
         {
-            titulo: "Desenhando Flores",
-            descricao: "Crie lindas flores coloridas",
-            url: "https://www.youtube.com/shorts/1p6HJLnAleo?feature=share",
-            tipo: "youtube"
-        }
+            titulo: "O Patinho Feio",
+            descricao: "Uma história sobre ser diferente",
+            url: "videos/desenhos/2.mp4"
+        },
     ],
     musica: [
         {
             titulo: "ABC Musical",
             descricao: "Aprenda o alfabeto cantando",
-            url: "https://www.youtube.com/shorts/xmpIm_E8ahQ?feature=share",
-            tipo: "youtube"
+            url: "videos/musica/1.mp4"
         },
         {
-            titulo: "Músicas de Roda",
-            descricao: "Cante e dance as músicas clássicas",
-            url: "https://www.youtube.com/shorts/NTb0NHLrXvU?feature=share",
-            tipo: "youtube"
-        }
+            titulo: "O Patinho Feio",
+            descricao: "Uma história sobre ser diferente",
+            url: "videos/musica/2.mp4"
+        },
     ],
     ciencia: [
         {
             titulo: "Experiência com Cores",
             descricao: "Misture cores e veja a mágica",
-            url: "https://www.youtube.com/shorts/UsHk4ZLH_3o?feature=share",
-            tipo: "youtube"
+            url: "videos/ciencia/1.mp4"
         },
         {
-            titulo: "Vulcão Caseiro",
-            descricao: "Faça um vulcão que explode!",
-            url: "https://www.youtube.com/shorts/dfItV6Ql0pc?feature=share",
-            tipo: "youtube"
-        }
+            titulo: "O Patinho Feio",
+            descricao: "Uma história sobre ser diferente",
+            url: "videos/ciencia/2.mp4"
+        },
     ],
     historias: [
         {
             titulo: "O Patinho Feio",
             descricao: "Uma história sobre ser diferente",
-            url: "https://www.youtube.com/shorts/jluEvdRbNxU?feature=share",
-            tipo: "youtube"
+            url: "videos/historias/1.mp4"
         },
         {
-            titulo: "Os Três Porquinhos",
-            descricao: "A clássica história dos porquinhos",
-            url: "https://www.youtube.com/shorts/2nLVedKJatc?feature=share",
-            tipo: "youtube"
-        }
+            titulo: "O Patinho Feio",
+            descricao: "Uma história sobre ser diferente",
+            url: "videos/historias/2.mp4"
+        },
     ],
     brincadeiras: [
         {
-            titulo: "Brincadeiras de Rua",
-            descricao: "Vamos brincar ao ar livre!",
-            url: "https://www.youtube.com/shorts/5ZbQkhavq6s?feature=share",
-            tipo: "youtube"
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/1.mp4"
         },
         {
             titulo: "Jogos Divertidos",
             descricao: "Jogos para brincar com os amigos",
-            url: "https://www.youtube.com/shorts/rkvpg9V5sn8?feature=share",
-            tipo: "youtube"
-        }
+            url: "videos/brincadeiras/2.mp4"
+        },
+        {
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/3.mp4"
+        },
+        {
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/4.mp4"
+        },
+        {
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/5.mp4"
+        },
+        {
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/6.mp4"
+        },
+        {
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/7.mp4"
+        },
+        {
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/8.mp4"
+        },
+        {
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/9.mp4"
+        },
+        {
+            titulo: "Jogos Divertidos",
+            descricao: "Jogos para brincar com os amigos",
+            url: "videos/brincadeiras/10.mp4"
+        },
     ]
 };
 
@@ -147,115 +224,50 @@ function abrirCategoria(categoria) {
     }, 300);
 }
 
-// function criarElementosVideo() {
-//     videosContainer.innerHTML = '';
-    
-//     videosAtuais.forEach((video, index) => {
-//         const videoElement = document.createElement('div');
-//         videoElement.className = 'video-item';
-//         if (index === 0) videoElement.classList.add('active');
-        
-//         videoElement.innerHTML = `
-//             <video loop playsinline>
-//                 <source src="${video.url}" type="video/mp4">
-//                 Seu navegador não suporta vídeos.
-//             </video>
-//             <div class="video-info">
-//                 <h2>${video.titulo}</h2>
-//                 <p>${video.descricao}</p>
-//             </div>
-//         `;
-        
-//         videosContainer.appendChild(videoElement);
-//     });
-    
-//     // Adicionar eventos de toque
-//     adicionarEventosToque();
-// }
-
 function criarElementosVideo() {
-  videosContainer.innerHTML = '';
-
-  videosAtuais.forEach((video, index) => {
-    const videoElement = document.createElement('div');
-    videoElement.className = 'video-item';
-    if (index === 0) videoElement.classList.add('active');
-
-    let mediaHTML = '';
-
-    if (video.tipo === 'mp4') {
-      mediaHTML = `
-        <video loop autoplay muted playsinline>
-          <source src="${video.url}" type="video/mp4">
-        </video>
-      `;
-    }
-
-    if (video.tipo === 'youtube') {
-      const videoId = video.url.split('/shorts/')[1];
-      mediaHTML = `
-        <iframe
-          src="https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&rel=0&playsinline=1"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen>
-        </iframe>
-      `;
-    }
-
-    videoElement.innerHTML = `
-      ${mediaHTML}
-      <div class="video-info">
-        <h2>${video.titulo}</h2>
-        <p>${video.descricao}</p>
-      </div>
-    `;
-
-    videosContainer.appendChild(videoElement);
-  });
-
-  adicionarEventosToque();
+    videosContainer.innerHTML = '';
+    
+    videosAtuais.forEach((video, index) => {
+        const videoElement = document.createElement('div');
+        videoElement.className = 'video-item';
+        if (index === 0) videoElement.classList.add('active');
+        
+        videoElement.innerHTML = `
+            <video loop playsinline>
+                <source src="${video.url}" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            <div class="video-info">
+                <h2>${video.titulo}</h2>
+                <p>${video.descricao}</p>
+            </div>
+        `;
+        
+        videosContainer.appendChild(videoElement);
+    });
+    
+    // Adicionar eventos de toque
+    adicionarEventosToque();
 }
 
-// function reproduzirVideoAtual() {
-//     const videoItems = document.querySelectorAll('.video-item');
-    
-//     videoItems.forEach((item, index) => {
-//         const video = item.querySelector('video');
-        
-//         if (index === videoAtualIndex) {
-//             item.classList.add('active');
-//             video.play().catch(err => console.log('Erro ao reproduzir:', err));
-//         } else {
-//             item.classList.remove('active');
-//             video.pause();
-//             video.currentTime = 0;
-//         }
-//     });
-    
-//     // Atualizar contador
-//     videoAtualSpan.textContent = videoAtualIndex + 1;
-// }
-
 function reproduzirVideoAtual() {
-  const videoItems = document.querySelectorAll('.video-item');
-
-  videoItems.forEach((item, index) => {
-    const video = item.querySelector('video');
-
-    if (index === videoAtualIndex) {
-      item.classList.add('active');
-      if (video) video.play().catch(() => {});
-    } else {
-      item.classList.remove('active');
-      if (video) {
-        video.pause();
-        video.currentTime = 0;
-      }
-    }
-  });
-
-  videoAtualSpan.textContent = videoAtualIndex + 1;
+    const videoItems = document.querySelectorAll('.video-item');
+    
+    videoItems.forEach((item, index) => {
+        const video = item.querySelector('video');
+        
+        if (index === videoAtualIndex) {
+            item.classList.add('active');
+            video.play().catch(err => console.log('Erro ao reproduzir:', err));
+        } else {
+            item.classList.remove('active');
+            video.pause();
+            video.currentTime = 0;
+        }
+    });
+    
+    // Atualizar contador
+    videoAtualSpan.textContent = videoAtualIndex + 1;
 }
 
 function proximoVideo() {

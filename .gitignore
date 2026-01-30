@@ -2,7 +2,6 @@
 
 # ==================== ARQUIVOS DE VÍDEO ====================
 # NÃO enviar vídeos para o repositório (são muito grandes)
-*.mp4
 *.avi
 *.mov
 *.mkv
