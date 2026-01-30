@@ -51,21 +51,6 @@ const videosData = {
             descricao: "Cachorrinhos fazendo coisas engraçadas",
             url: "videos/animais/10.mp4"
         },
-        {
-            titulo: "Cachorros Felizes",
-            descricao: "Cachorrinhos fazendo coisas engraçadas",
-            url: "videos/animais/11.mp4"
-        },
-        {
-            titulo: "Cachorros Felizes",
-            descricao: "Cachorrinhos fazendo coisas engraçadas",
-            url: "videos/animais/12.mp4"
-        },
-        {
-            titulo: "Cachorros Felizes",
-            descricao: "Cachorrinhos fazendo coisas engraçadas",
-            url: "videos/animais/13.mp4"
-        },
     ],
     desenhos: [
         {
